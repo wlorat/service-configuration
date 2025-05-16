@@ -1,2 +1,19 @@
 company:
   property: User Profile Dev Update
+
+spring:
+  application:
+    name: company-services
+  datasource:
+    url: jdbc:postgresql://localhost:5432/one-test
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  show-sql: true
