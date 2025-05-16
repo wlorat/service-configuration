@@ -1,5 +1,5 @@
 company:
-  property: User Profile Dev Update
+  property: User Profile Dev
 
 spring:
   datasource:
