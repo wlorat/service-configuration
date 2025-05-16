@@ -2,8 +2,6 @@ company:
   property: User Profile Dev Update
 
 spring:
-  application:
-    name: company-services
   datasource:
     url: jdbc:postgresql://localhost:5432/one-test
     username: admin
