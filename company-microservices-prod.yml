@@ -1,1 +1,2 @@
-user.property: User Profile Prod
+company:
+  property: User Profile Prod
