@@ -5,6 +5,8 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/one-test
     driver-class-name: org.postgresql.Driver
+    username: ${username}
+    password: ${password}
 
   jpa:
     hibernate:
