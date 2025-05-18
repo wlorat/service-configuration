@@ -8,8 +8,8 @@ spring:
       uri: http://localhost:8200
       authentication: APPROLE
       app-role:
-        role-id: f41545fb-d814-1274-edb5-7ae53d250e84
-        secret-id: 5d39eb23-b339-9b76-434d-2c196cd706c7
+        role-id: 9d08261c-33f6-4695-d569-33608e876f0a
+        secret-id: 15803b5c-5594-ebbf-2091-40bddbfd33e5
       kv:
         enabled: true
         backend: one360
