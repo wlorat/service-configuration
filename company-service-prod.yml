@@ -2,19 +2,6 @@ company:
   property: User Profile Prod
 
 spring:
-  cloud:
-    vault:
-      uri: http://localhost:8200
-      authentication: APPROLE
-      app-role:
-        role-id: 9d08261c-33f6-4695-d569-33608e876f0a
-        secret-id: 15803b5c-5594-ebbf-2091-40bddbfd33e5
-      kv:
-        enabled: true
-        backend: one360
-        default-context: company-service/dev
-        generic:
-          enabled: false
   datasource:
     url: jdbc:postgresql://localhost:5432/one-test
     username: admin
