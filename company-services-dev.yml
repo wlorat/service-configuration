@@ -6,7 +6,7 @@ spring:
   cloud:
     vault:
       uri: http://localhost:8200
-      authentication: approle
+      authentication: APPROLE
       app-role:
         role-id: f41545fb-d814-1274-edb5-7ae53d250e84
         secret-id: 5d39eb23-b339-9b76-434d-2c196cd706c7
