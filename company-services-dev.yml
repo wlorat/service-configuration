@@ -8,12 +8,14 @@ spring:
       uri: http://localhost:8200
       authentication: approle
       app-role:
-        role-id: 5b8a2f1f-23ee-e297-b794-35a2f97a27d9
-        secret-id: 648b6b09-ba43-f5f5-ae3f-fc1565a826a1
+        role-id: f41545fb-d814-1274-edb5-7ae53d250e84
+        secret-id: 5d39eb23-b339-9b76-434d-2c196cd706c7
       kv:
         enabled: true
-        backend: kv
+        backend: one360
         default-context: company-service/dev
+        generic:
+          enabled: false
   datasource:
     url: jdbc:postgresql://localhost:5432/one-test
     driver-class-name: org.postgresql.Driver
