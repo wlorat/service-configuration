@@ -1,7 +1,19 @@
 company:
   property: User Profile Dev
 
+
 spring:
+  cloud:
+    vault:
+      uri: http://localhost:8200
+      authentication: approle
+      app-role:
+        role-id: 5b8a2f1f-23ee-e297-b794-35a2f97a27d9
+        secret-id: 648b6b09-ba43-f5f5-ae3f-fc1565a826a1
+      kv:
+        enabled: true
+        backend: kv
+        default-context: company-service/dev
   datasource:
     url: jdbc:postgresql://localhost:5432/one-test
     driver-class-name: org.postgresql.Driver
